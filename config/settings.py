@@ -39,10 +39,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     "rest_framework.authtoken",
+    'corsheaders',
     'drf_yasg',
     'destination',
     'account',
 ]
+
+CORS_ORIGIN_WHITELIST = ['*']
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
